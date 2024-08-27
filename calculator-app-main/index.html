@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <link rel="stylesheet" href="/w3.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div class="calculator" >
+                <div class="d-flex justify-content-between theme-selector ">
+                    <div><h3 class="fw-bold">calc</h3></div>
+                    <div class="">
+                        <div class="row">
+                           <div class="col-6">
+                            <h6 class=" fs-6">THEME</h6>
+                           </div>
+                           <div class="col-6 pt-3">
+                            <div id="theme-container">
+                                <input type="radio" class="rad " value="1" name="theme" id="theme1" checked>
+                                <input type="radio" class="rad " value="2" name="theme" id="theme2"> 
+                                <input type="radio" class="rad " value="3" name="theme" id="theme3"> 
+                                
+                            </div> 
+                           </div>                        
+                        </div>
+                    </div>
+                </div>
+                <input type="text" id="display" class="display">
+                <div class="row ">
+                    <div class="col-3 my-2 buttons">
+                        <button class="p-4 pb-5 rounded butt fs-5 fw-bolder " onclick="appendToDisplay('7')">7</button>
+                    </div>
+                    <div class="col-3 my-2 buttons ">
+                        <button class="p-4 pb-5  rounded butt fs-5 fw-bolder " onclick="appendToDisplay('8')">8</button>
+                    </div>
+                    <div class="col-3 my-2 buttons">
+                        <button class="p-4  pb-5 rounded butt fs-5 fw-bolder " onclick="appendToDisplay('9')">9</button>
+                    </div>
+                    <div class="col-3 my-2 button">
+                        <button  class="p-4 pb-5 del rounded fs-5  fw-bolder"onclick="deleteLast()">DEL</button>
+                    </div>
+                    <div class="col-3 my-2 buttons">
+                        <button class="p-4  pb-5 rounded butt fs-5 fw-bolder " onclick="appendToDisplay('4')">4</button>
+                    </div>
+                    <div class="col-3 my-2 buttons">
+                        <button class="p-4  pb-5 rounded butt fs-5 fw-bolder " onclick="appendToDisplay('5')">5</button>
+                    </div>
+                    <div class="col-3 my-2 buttons">
+                        <button class="p-4  pb-5 rounded butt fs-5 fw-bolder" onclick="appendToDisplay('6')">6</button>
+                    </div>
+                    <div class="col-3 my-2 buttons">
+                        <button class="p-4 pb-5 rounded butt fs-5 fw-bolder " onclick="appendToDisplay('+')">+</button>
+                    </div>
+                    <div class="col-3 my-2 buttons">
+                        <button class="p-4 pb-5 rounded butt fs-5 fw-bolder " onclick="appendToDisplay('1')">1</button>
+                    </div>
+                    <div class="col-3 my-2 buttons">
+                        <button class="p-4 pb-5 rounded butt fs-5 fw-bolder " onclick="appendToDisplay('2')">2</button>
+                    </div>
+                    <div class="col-3 my-2 buttons">
+                        <button class="p-4 pb-5 rounded butt fs-5 fw-bolder " onclick="appendToDisplay('3')">3</button>
+                    </div>
+                    <div class="col-3 my-2 buttons">
+                        <button class="p-4 pb-5 rounded butt fs-5 fw-bolder " onclick="appendToDisplay('-')">-</button>
+                    </div>
+                    <div class="col-3 my-2 buttons">
+                        <button class="p-4 pb-5 rounded butt fs-5 fw-bolder" onclick="appendToDisplay('.')">.</button>
+                    </div>
+                    <div class="col-3 my-2 buttons">
+                        <button class="p-4 pb-5 rounded butt fs-5 fw-bolder " onclick="appendToDisplay('0')">0</button>
+                    </div>
+                    <div class="col-3 my-2 buttons">
+                        <button class="p-4 pb-5 rounded butt fs-5 fw-bolder " onclick="appendToDisplay('/')">/</button>
+                    </div>
+                    <div class="col-3 my-2 buttons">
+                        <button class="p-4 pb-5 rounded butt fs-5 fw-bolder" onclick="appendToDisplay('*')">X</button>
+                    </div> 
+                    <div class="col-6 my-2 button">
+                        <button class="p-4 pb-5 long rounded fs-5 fw-bolder reset" onclick="clearDisplay()">RESET</button>
+                    </div>
+                    <div class="col-6 my-2 button">
+                        <button class="p-4 pb-5 long rounded fs-5 fw-bolder calc" onclick="calculate()">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
