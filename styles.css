@@ -1,0 +1,287 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color: #f3f3f3;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+
+    border-radius: 50px;
+    padding: 20px;
+    width: 450px;
+}
+
+#display {
+    width: 100%;
+    height: 100px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: right;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+button {
+    width:90px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #f3f3f3;
+    transition: background-color 1s;
+    border: none;
+    
+}
+
+theme-container {
+    display: flex;
+    gap: 10px;
+    background-color:rgb(0, 255, 13);
+    margin-top: 20px;
+    width: max-content;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+  input {
+    margin: 5px 8px;
+    outline: none;
+    border: none;
+    appearance: none;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    position: relative;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  
+  
+  
+  input::before {
+    position: relative;
+    top: -20px;
+    left: 2px;
+  }
+  
+  input::after {
+    appearance: none;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    content: "po";
+    left: -10px;
+    top: 0;
+    transition: all 0.2s ease-in;
+    color: transparent;
+    /* opacity: 0; */
+  }
+  
+  input:checked::after {
+    background-color: orange;
+    left: 0;
+    /* opacity: 1; */
+  }
+  
+  input:nth-child(1)::before {
+    content: "1";
+  }
+  
+  input:nth-child(2)::before {
+    content: "2";
+  }
+  
+  input:nth-child(3)::before {
+    content: "3";
+  }
+  
+.long{
+    width: 200px;
+}
+
+/* Theme 1 */
+.theme1  {
+    background-color: #3b4664;
+}
+.theme1 .container{
+    background-color: #3b4664 ;
+}
+.theme1 .calculator {
+    background-color: #3b4664 ;
+}
+
+
+.theme1 .display {
+    background-color: #181f33;
+    color: whitesmoke;
+}
+
+.theme1 .buttons button {
+    background-color: #eae3dc;
+    color: #444;
+}
+
+
+
+.theme1 .buttons .equals {
+    background-color: #d03f2f;
+    color: #fff;
+}
+.theme1 h3, .theme1 h6{
+    color: white;
+}
+
+.theme1 .del{
+    background-color:#3b4664;
+    color: wheat;
+}
+.theme1 .reset{
+    background-color: #3b4664 ;
+    color: wheat;
+}
+.theme1 .calc{
+    background-color: rgb(236, 45, 45);
+    color: wheat;
+}
+.theme1 .reset:hover{
+    background-color: rgb(166, 178, 247);
+}
+.theme1 .del:hover{
+    background-color: rgb(166, 178, 247);
+}
+
+.theme1 .calc:hover{
+    background-color: rgb(241, 120, 120);
+}
+.theme1 .butt:hover{
+    background-color:whitesmoke;
+}
+
+.theme1 .rad{
+    color: white;
+}
+/* Theme 2 */
+.theme2 {
+    background-color: #e6e6e6;
+}
+
+.theme2 .container{
+    background-color: #e6e6e6;
+}
+.theme2 .display {
+    background-color: #ededed;
+    color: #373737;
+}
+
+.theme2 .buttons button {
+    background-color: #e5e4e1;
+    color: #373737;
+}
+
+/*.theme2 .second {
+    background-color: whitesmoke;
+}*/
+
+
+.theme2 .buttons .equals {
+    background-color: #c85402;
+    color: #fff;
+}
+
+.theme2 .reset{
+    background-color: teal;
+    color: wheat;
+}
+.theme2 .calc{
+    background-color: orangered;
+    color: wheat;
+}
+.theme2 .del{
+    background-color:teal;
+    color: wheat;
+}
+.theme2 .reset:hover{
+    background-color: rgb(96, 220, 236);
+}
+.theme2 .del:hover{
+    background-color: rgb(96, 220, 236);
+}
+
+.theme2 .calc:hover{
+    background-color: rgb(246, 8, 48);
+}
+.theme2 .butt:hover{
+    background-color: white;
+}
+
+.theme2 .rad{
+    color: black;
+}
+
+/* Theme 3 */
+.theme3 {
+    background-color: #17062a;
+}
+
+.theme3 .container{
+    background-color: #17062a;
+}
+
+.theme3 .calculator {
+    background-color: #17062a;
+}
+
+.theme3 .display {
+    background-color: #1e0836;
+    color: #ffe53d;
+}
+
+.theme3 .buttons button {
+    background-color: #331b4d;
+    color: #ffe53d;
+}
+
+.theme3 .buttons .equals {
+    background-color: #00e0d1;
+    color: #fff;
+}
+.theme3 h3, .theme3 h6{
+    color: yellow;
+}
+
+.theme3 .reset{
+    background-color: purple;
+    color: wheat;
+}
+.theme3 .calc{
+    background-color:lightblue;
+    color: black;
+}
+.theme3 .del{
+    background-color:purple;
+    color: wheat;
+}
+.theme3 .reset:hover{
+    background-color: plum;
+}
+.theme3 .del:hover{
+    background-color: plum;
+}
+
+.theme3 .calc:hover{
+    background-color: rgb(8, 210, 246);
+}
+
+.theme3 .butt:hover{
+    background-color: #b094b4;
+}
+.theme3 .rad{
+    color: yellow;
+}
